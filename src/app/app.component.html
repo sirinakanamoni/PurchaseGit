@@ -1,0 +1,35 @@
+<form align="center" [formGroup]="purchaseOrderForm">
+  <div>
+    <h1>Purchases</h1>
+  </div>
+  <br>
+  <div>
+    <label>Quantity</label>
+    <input type="number" placeholder="Quantity" formControlName="quantity">
+  </div>
+  <br>
+  <div>
+    <label>Unit Rate</label>
+    <input type="number" placeholder="Unit Rate" formControlName="unitRate">
+  </div>
+  <br>
+  <div>
+    <label>Discount Rate</label>
+    <input type="number" placeholder="Discount Rate" formControlName="discountRate">
+  </div>
+  <br>
+  <div>
+    <label>Vat Rate</label>
+    <input type="number" placeholder="Vat Rate " formControlName="vatRate">
+  </div>
+  <br>
+  <div>
+    <label>Net Rate</label>
+    <input type="number" placeholder="Net Rate" formControlName="netRate" readonly>
+  </div>
+  <br>
+  <div>
+    <label>Total Amount</label>
+    <input type="number" placeholder="Total Amount" formControlName="totalAmount" readonly>
+  </div>
+</form>
