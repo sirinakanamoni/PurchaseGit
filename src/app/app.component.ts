@@ -4,11 +4,13 @@ import { FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { FormBuilder, Validators } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { CuntryComponent } from './cuntry/cuntry.component';
+import { EmployeeComponent } from './employee/employee.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, FormsModule, ReactiveFormsModule,CuntryComponent],
+  imports: [CommonModule, FormsModule, ReactiveFormsModule,
+    CuntryComponent,EmployeeComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
